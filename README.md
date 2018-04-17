@@ -17,3 +17,7 @@ Install LabVIEW 2017 runtime
 Install and run LabVIEW application
 
 
+# Issues
+If you get that annoying error about TLS/SSL, try changing the version of Tls
+I fixed this error by adding the following line:
+  [Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
