@@ -1,7 +1,12 @@
+# Build Status
+[![Build status](https://ci.appveyor.com/api/projects/status/mbgssfkx68myrxo3?svg=true)](https://ci.appveyor.com/api/projects/status/mbgssfkx68myrxo3?svg=true)
+
+# Development Status
+Currently this supports Python, LabVIEW is next, followed by LabVIEW FPGA.
 
 # Goals
 
-Stage 1
+## Stage 1
 Build docker image based on official windows server core
 
  * docker build -t johnstratoudakis/pythontest .
@@ -11,7 +16,7 @@ Install python runtime
 
 Execute python script
 
-Stage 2
+## Stage 2
 Install LabVIEW 2017 runtime
 
 Install and run LabVIEW application
