@@ -1,5 +1,5 @@
-#version: 1.0.{build}
-#image: Visual Studio 2017
+version: 1.0.{build}
+image: Visual Studio 2017
 
 # Uncomment to debug via RDP
 #init:
@@ -17,8 +17,8 @@
 #  - ps: Write-Host Server version $(gp 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion').BuildLabEx
 #  - docker version
 
-#build_script:
-#  - ps: .\build.ps1
+build_script:
+  - ps: .\build.ps1
 
 #test_script:
 #  - ps: .\test.ps1
