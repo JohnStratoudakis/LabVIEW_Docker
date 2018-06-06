@@ -1,1 +1,1 @@
-docker build -t johnstratoudakis/pythontest .
+docker build -t johnstratoudakis/labviewtest .
