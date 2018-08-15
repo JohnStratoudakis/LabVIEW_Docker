@@ -2,27 +2,31 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/mbgssfkx68myrxo3?svg=true)](https://ci.appveyor.com/project/JohnStratoudakis/labview-docker)
 
 # Development Status
-Currently this supports Python, LabVIEW is next, followed by LabVIEW FPGA.
+Builds a Docker Image with 3 of the LabVIEW 2018 runtime msi modules installed.
 
-# Goals
+# Instructions
 
-## Stage 1
-Build docker image based on official windows server core
+## Start powershell.exe
 
- * docker build -t johnstratoudakis/pythontest .
+ * Start->Run
+ * powershell.exe
 
-Install python runtime
- * Copied code from https://github.com/docker-library/python/blob/master/3.6/windows/windowsservercore-1709/Dockerfile
+## Build docker image
 
-Execute python script
+From powershell, execute 'build.ps1'
 
-## Stage 2
-Install LabVIEW 2017 runtime
+(build.ps1 calls docker build -t johnstratoudakis/labview_test .)
 
-Install and run LabVIEW application
+## Run docker image
 
+From powershell, execute 'run.ps1'
 
-# Issues
-If you get that annoying error about TLS/SSL, try changing the version of Tls
-I fixed this error by adding the following line:
-  [Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+## Usage
+
+Now you will have been dropped inside a docker container with the LabVIEW 2018 runtime installed.
+Explore and take a look at the directory.
+
+You will have to modify the run.ps1 script to make the directories match your system configuration.
+The -v option maps the first directory which should exist outside the docker image to the second directory accessible from within the docker container.
+
+Note: A docker image is called a container after it has been started.

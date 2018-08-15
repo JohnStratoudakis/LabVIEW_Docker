@@ -1,1 +1,1 @@
-docker build -t johnstratoudakis/labviewtest .
+docker build -t johnstratoudakis.com/labview_test .
