@@ -1,6 +1,10 @@
 # Build Status
 [![Build status](https://ci.appveyor.com/api/projects/status/mbgssfkx68myrxo3?svg=true)](https://ci.appveyor.com/project/JohnStratoudakis/labview-docker)
 
+# To do
+Check out this link, when I get some time I will try to follow it
+http://stry.kr/2020/06/09/contain-your-excitement/
+
 # Development Status
 Builds a Docker Image with 3 of the LabVIEW 2018 runtime msi modules installed.
 
